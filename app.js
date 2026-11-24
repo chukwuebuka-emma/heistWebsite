@@ -24,8 +24,8 @@ res.sendFile(path.join(__dirname, "public", "contact.html"));
 
 
 
-    server.listen(3000,function(){
+  const PORT = process.env.PORT || 3000;
 
-  console.log("Sever is running on port 3000");
-
-    });
+server.listen(PORT, function() {
+    console.log(`HEIST is running on port ${PORT}`);
+});
